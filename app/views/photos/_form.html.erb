@@ -1,0 +1,23 @@
+<%= form_for @photo do |f| %>
+  <% if @photo.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <h2>errors:</h2>
+        <% @photo.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end  %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+
+  <%= f.label :date_taken %>
+  <%= f.datetime_select :date_taken %>
+
+  <%= f.submit %>
+<% end %>
