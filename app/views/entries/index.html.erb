@@ -1,0 +1,10 @@
+<h2>All Entries</h2>
+
+<%= link_to "NEW", new_entry_path %>
+
+<% @entries.each do |entry| %>
+<p><%= entry.author %></p>
+<p><%= link_to "Show", entry_path(entry) %></p>
+<p><%= image_tag(entry.photo_url) %></p>
+<p><%= entry.date_taken %></p>
+<% end %>

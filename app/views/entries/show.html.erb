@@ -1,0 +1,11 @@
+<%= link_to "ALLL", entries_path %>
+
+<%= link_to "Edit", edit_entry_path %>
+<%= link_to '(Delete)', entry_path,
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+
+
+<p><%= @entry.author %></p>
+<p><%= @entry.date_taken %></p>
+<p><%= image_tag (@entry.photo_url) %></p>
