@@ -1,7 +1,7 @@
 class EntriesController < ApplicationController
 
   def index
-    @entries = Entry.all 
+    @entries = Entry.all
   end
 
   def show
@@ -13,8 +13,12 @@ class EntriesController < ApplicationController
 
   def create
     @entry = Entry.new(entry_params)
-    @entry.save
-    redirect_to @entry
+
+    if @entry.save
+      redirect_to @entry
+    else
+      render 'new'
+    end
   end
 
   private
