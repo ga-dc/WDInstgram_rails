@@ -1,0 +1,7 @@
+<div class="show author">User: <%= @entry.author %></div>
+<div class="show image"><%= image_tag(@entry.photo_url) %></div>
+<div class="show links">
+  <%= link_to "EDIT", edit_entry_path %>
+  <%= link_to "DELETE", entry_path, method: :delete, data: {confirm: 'Are you sure?'} %>
+  <%= link_to "BACK", entries_path %>
+</div>

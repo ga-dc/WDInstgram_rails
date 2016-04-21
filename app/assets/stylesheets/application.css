@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+.image img{
+  height:50%;
+  width:50%;
+}
+.container{
+  margin:1.5em;
+}
+.show img{
+  height:75%;
+  width:75%;
+}
+.created_at{
+  font-style: italic;
+}
