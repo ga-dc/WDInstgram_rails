@@ -1,7 +1,7 @@
 class EntriesController < ApplicationController
 
   def index
-    @entry = Entry.all 
+    @entries = Entry.all 
   end
 
   def show

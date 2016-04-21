@@ -1,0 +1,17 @@
+<h1>Entries</h1>
+
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Photo</th>
+    <th>Date</th>
+  </tr>
+
+  <% @entries.each do |entry| %>
+    <tr>
+      <td><%= entry.author %></td>
+      <td><%= entry.photo_url %></td>
+      <td><%= entry.date_taken %></td>
+    </tr>
+    <% end %>
+</table>
