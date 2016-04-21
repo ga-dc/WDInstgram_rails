@@ -1,0 +1,9 @@
+<h2>All Entries</h2>
+
+  <%= link_to "NEW", new_entry_path %>
+
+<% @entries.each do |entry| %>
+<p><%= entry.author %></p>
+<p><%= image_tag(entry.photo_url, :alt => "rss feed") %></p>
+<p><%= entry.date_taken %></p>
+<% end %>
