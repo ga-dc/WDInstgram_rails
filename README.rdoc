@@ -1,28 +1,8 @@
-== README
+User stories:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+As a user, I would like to...
+  see all photos so that I can look for ones I like.
+  add photos so they are viewable online.
+  remove photos so that if I don't like one I don't have to see it.
+  include a date in my image posting so that I can see when different pictures were taken.
+  comment on photos to leave feedback and opinions.

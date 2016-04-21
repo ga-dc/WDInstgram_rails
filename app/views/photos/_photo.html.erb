@@ -1,0 +1,10 @@
+<div class="photo">
+  <%= link_to image_tag(photo.photo_url), photo_path(photo) %>
+  <div class="photo-info">
+    <lighter><%= "Taken by #{photo.author} on #{photo.date_taken.strftime("%B %d, %Y")}"%></lighter>
+    <div class="photo-actions">
+      <%= link_to "Edit", edit_photo_path(photo) %>
+      <%= link_to "Delete", photo_path(photo), method: 'delete' %>
+    </div>
+  </div>
+</div>
