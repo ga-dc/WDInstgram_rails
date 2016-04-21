@@ -1,0 +1,11 @@
+<div class="new_image">
+     <%= form_for @entry do |f| %>
+  <p><%= f.label :author %></p>
+  <p><%= f.text_field :author %></p>
+  <p><%= f.label :photo_url %></p>
+  <p><%= f.text_field :photo_url %></p>
+  <p><%= f.label :date_taken %></p>
+  <p><%= f.text_field :date_taken %></p>
+  <%= f.submit %>
+  <% end %>
+</div>

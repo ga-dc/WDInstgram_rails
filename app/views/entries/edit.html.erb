@@ -1,0 +1,6 @@
+<h3><%= link_to "view gallery", entries_path %></h3>
+<h3><%= link_to "add image", new_entry_path %></h3>
+<h3><%= link_to "edit image", edit_entry_path(@entry) %></h3>
+<h3><%= link_to "remove image", entry_path(@entry), method: :delete %></h3>
+
+<%= render partial: 'form' %>
