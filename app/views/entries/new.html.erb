@@ -1,0 +1,23 @@
+<h1>New Entry</h1>
+
+<%= form_for :entry do |f| %>
+  <p>
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </p>
+
+  <p>
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </p>
+
+  <p>
+    <%= f.label :date_taken %>
+    <%= f.text_field :date_taken %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+  <% end %>
