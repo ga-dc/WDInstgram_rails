@@ -5,7 +5,7 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @entry.photo_url %>
+  <%= image_tag(@entry.photo_url) %>
 </p>
 
 <p>
@@ -13,4 +13,5 @@
   <%= @entry.date_taken %>
 </p>
 
-<%= link_to 'All Entries', entries_path %>
+<%= link_to 'All Entries', entries_path %> |
+<%= link_to 'Edit', edit_entry_path(@entry) %>
