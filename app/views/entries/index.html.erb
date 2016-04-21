@@ -1,0 +1,9 @@
+<div>
+  <h3><%= link_to "add image", new_entry_path %></h3>
+</div>
+
+<% @entries.each do |entry| %>
+  <div class="small_pic">
+    <%= link_to(image_tag(entry.photo_url, :alt => "Amazing Nature Pic"), entry_path(entry)) %>
+  </div>
+<% end %>

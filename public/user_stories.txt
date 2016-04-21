@@ -1,0 +1,8 @@
+USER STORIES
+
+1.  **I want to see all images on the first page in squares.
+2.  I want to be able to click on an image to see it closer up.
+3.  I want to be able to add more images and have the most recent
+    displayed at the top left.
+4.  I want to be able to delete an image.
+5.  I want to be able to change an image.
