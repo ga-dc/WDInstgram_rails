@@ -1,0 +1,17 @@
+<p>
+  <strong>Author:</strong>
+  <%= @entry.author %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag(@entry.photo_url) %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @entry.date_taken %>
+</p>
+
+<%= link_to 'All Entries', entries_path %> |
+<%= link_to 'Edit', edit_entry_path(@entry) %>
