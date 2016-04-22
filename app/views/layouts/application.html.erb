@@ -8,7 +8,14 @@
 </head>
 <body>
 
+<nav>
+  <%= link_to "New Entry", new_entry_path %>
+  <%= link_to 'Index', entries_path %>
+</nav>
+
 <%= yield %>
+
+
 
 </body>
 </html>
