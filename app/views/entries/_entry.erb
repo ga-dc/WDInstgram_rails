@@ -1,0 +1,6 @@
+<div>
+  <tr>
+  <td><%= link_to image_tag("#{entry.photo_url}", :border => 1), entry_path(entry) %></td>
+  <td><%= raw tag_links(entry.all_tags)%></td>
+</tr>
+</div>
