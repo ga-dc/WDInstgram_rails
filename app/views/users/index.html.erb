@@ -1,0 +1,11 @@
+
+<h2><%= link_to "New Post", new_user_path %></h2>
+
+<% @users.each do |user| %>
+
+  <div class="user">
+    <p><%=link_to user.author, user_path(user) %></p>
+    <img src="<%= user.photo_url %>"/>
+    <p><%= user.date_taken %></p>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+<div class="user">
+<h2>New Post</h2>
+  <%= form_for @user do |f| %>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </br>
+  </br>
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </br>
+  </br>
+    <%= f.label :date_taken %>
+    <%= f.text_field :date_taken %>
+  </br>
+  </br>
+    <%= f.submit %>
+  <% end %>
+
+  <h4><%= link_to "All Posts", users_path %></h4>
+
+</div>

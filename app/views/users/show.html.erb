@@ -1,0 +1,7 @@
+<div class="user">
+<h4> <%= @user.author %>       <%= @user.date_taken %></h4>
+<img src="<%= @user.photo_url %>"/>
+
+<p><%= link_to 'All Posts', users_path %> |
+<%= link_to 'Edit', edit_user_path(@user) %></p>
+</div>
