@@ -1,0 +1,14 @@
+<%= form_for @entry do |f| %>
+
+<%=f.label :author %>
+<%=f.text_field :author %>
+
+<%=f.label :date_taken, value: :Date %>
+<%=f.text_field :date_taken, value: "#{Time.at(Time.now.to_i).strftime("%B %e, %Y at %I:%M %p")}" %>
+
+<%=f.label :photo_url %>
+<%=f.text_field :photo_url %>
+
+<%=f.submit %>
+
+<% end %>
