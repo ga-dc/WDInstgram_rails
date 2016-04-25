@@ -1,0 +1,16 @@
+<h3><%= link_to "Post something!", new_entry_path%></h3><br>
+
+<% @entries.reverse.each do |e| %>
+<div class="post">
+  <img src="<%= e.photo_url %>">
+  <p class="author">
+    <%= "#{e.author} took this on #{e.date_taken}"%></p>
+    <p class="options">
+    <%= link_to "View", entry_path(e) %>
+    <%= link_to "Edit",edit_entry_path(e) %>
+    <%= link_to "Delete", entry_path(e),
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' } %>
+  </p>
+</div>
+<% end %>

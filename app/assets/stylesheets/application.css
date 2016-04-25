@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+
+
+img {
+  height: 500px;
+  width: 500px;
+}
+
+.post {
+  position: relative;
+  width: 520px;
+}
+
+.post img {
+  border: 10px solid #fff;
+  border-bottom: 85px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+.post p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 30px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
+}
+
+.post .options{
+  bottom: 0px;
+}
+
+.container {
+  margin: auto;
+  width: 40%;
+}
+
+h1, h3 {
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+
+}
+
+h1 {
+       position: relative;
+       font-size: 70px;
+       margin-top: 0;
+       font-family: 'Lobster', helvetica, arial;
+   }
+
+
+body {
+    background-image: url("http://previews.123rf.com/images/jakkapan/jakkapan1505/jakkapan150500015/39648342-brick-wall-texture-background-vintage-and-instagram-film-look-color-tone-Stock-Photo.jpg");
+}
